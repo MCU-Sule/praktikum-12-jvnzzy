@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE-edge" />
+    <meta name="author" content="Fabio 2172014" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Soal2</title>
+    <style>
+      #button {
+        width: 100%;
+      }
+      .hitam {
+        margin-top: 20px;
+        background-color: black;
+        width: 100%;
+        height: 500px;
+      }
+      .kotak {
+        border: 2px solid orange;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-left: 3px;
+      }
+      .kotak1 {
+        border: 2px solid orange;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-left: 3px;
+      }
+      .kotak2 {
+        border: 2px solid orange;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-left: 3px;
+      }
+      .nama {
+        background-color: rgba(226, 158, 12, 0.597);
+        width: 80%;
+        height: 25px;
+        font-size: 100px;
+        color: yellow;
+        margin-left: 100px;
+        position: absolute;
+      }
+      .nama1 {
+        background-color: rgba(226, 158, 12, 0.597);
+        width: 80%;
+        height: 25px;
+        font-size: 100px;
+        color: yellow;
+        margin-left: 100px;
+        position: absolute;
+      }
+      .nama2 {
+        background-color: rgba(226, 158, 12, 0.597);
+        width: 80%;
+        height: 25px;
+        font-size: 100px;
+        color: yellow;
+        margin-left: 100px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="" id="button">Find me 3 random champion</button>
+
+    <div class="hitam">
+      <div class="kotak">
+        <br />
+        <div class="nama"></div>
+        <p class="p"></p>
+      </div>
+      <br />
+      <div class="kotak1">
+        <br />
+        <div class="nama1"></div>
+        <p class="p1"></p>
+      </div>
+      <br />
+      <div class="kotak2">
+        <br />
+        <div class="nama2"></div>
+        <p class="p2"></p>
+      </div>
+    </div>
+    <script>
+      function satu() {
+        $.getJSON("../assets/league.json");
+        let a = parseInt(Math.round(Math.random() * 152));
+      }
+    </script>
+  </body>
+</html>
